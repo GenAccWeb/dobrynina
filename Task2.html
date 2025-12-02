@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квесты дома</title>
+    <link rel="stylesheet" href="styletask.css">
+</head>
+<body>
+    <header id="top">
+        <nav>
+            <a class="menu" href="#about">О нас</a>
+            <a class="menu" href="#scenario">Сценарий</a>
+            <a class="menu" href="#galery">Фотогалерея</a>
+            <a class="menu" href="#bid">Оставь заявку</a>
+            <a class="menu" href="#contacts">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Мы создали этот сайт, чтобы делиться нашими идеями игры и заданий и разнообразить домашний досуг с детьми. Ведь внимание родителей к детям бесценно! Сперва мы создавали домашние квесты для себя и друзей, а потом решили делиться ими со всеми. Мы не ожидали, что найдем столько поклонников и последователей, но очень рады, что так получилось.</p>
+        </section>
+        <section id="scenario">
+            <h2>Выбери свой сценарий квеста</h2>
+            <p>Оплатите выбранный сюжет — письмо со сценарием квеста в формате PDF придет вам на почту. Распечатайте сценарий, подготовьте квест по инструкции и запускайте игру. Идеальное решение, если нужно быстро и весело организовать домашний праздник.</p>
+            <h4>Топ 5 популярных квестов</h4>
+            <ol>
+                <li>Юные Энштейны</li>
+                <li>Детективный</li>
+                <li>В поисках пиратских сокровищ</li>
+                <li>Гарри Поттер и юные маги</li>
+                <li>Уэнсдей-загадка Невермора</li>
+
+            </ol>
+            <table>
+                <thead>Варианты квеста</thead>
+                <tr>
+                    <th>Название квеста</th>
+                    <th>Место проведения</th>
+                    <th>Возраст участников</th>
+                    <th>Продолжительность</th>
+                    <th>Стоимость</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>Детективный</td>
+                        <td>для дома</td>
+                        <td>7-9 лет</td>
+                        <td rowspan="7">60 мин</td>
+                        <td>750 р</td>
+                    </tr>
+                    <tr>
+                        <td>Гравити Фолз</td>
+                        <td>для дома</td>
+                        <td>7-9 лет</td>
+                        
+                        <td>630 р</td>
+                    </tr>
+                    <tr>
+                        <td>Вокруг света за 1 день</td>
+                        <td>для дачи</td>
+                        <td>13-17 лет</td>
+                        
+                        <td>750 р</td>
+                    </tr>
+                    <tr>
+                        <td>Юные Энштейны</td>
+                        <td>для дома</td>
+                        <td>10-12 лет</td>
+                        
+                        <td>750 р</td>
+                    </tr>
+                     <tr>
+                        <td>В поисках пиратских сокровищ</td>
+                        <td>для дачи</td>
+                        <td>10-12 лет</td>
+                        
+                        <td>750 р</td>
+                    </tr>
+                     <tr>
+                        <td>Гарри Поттер и юные маги</td>
+                        <td>для дачи/для дома</td>
+                        <td>7-9/10-12 лет</td>
+                        
+                        <td>750 р</td>
+                    </tr>
+                     <tr>
+                        <td>Уэнсдей-загадка Невермора</td>
+                        <td>для дома</td>
+                        <td>7-9 лет</td>
+                        
+                        <td>700 р</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </section>
+        <section id="galery">
+            <h2>Фотогалерея</h2>
+            <p>А вот так наши покупатели играют в квесты с детьми! Правда увлеченно и весело? Спасибо за ваши фотографии, они мотивируют нас создавать новые сценарии и игры для детей и взрослых.</p>
+            <img src="quest1.webp" alt="дети фотографируют игру">
+            <img src="quest2.webp" alt="дети с фальгой">
+            <img src="quest3.webp" alt="гарри поттер листки с заданиями">
+            <img src="quest4.webp" alt="дети решают задание">
+            <p>Еще больше отзывов вы найдете <b><a href="https://questdoma.ru/reviews" target="_blank" rel="noopener noreferre">здесь</a></b> </p>
+        </section>
+        <section id="bid">
+            <h2>Оставьте заявку на квест</h2>
+            <form action="/submit" method="post">
+            <label > Введите ваше имя: <input type="text" name="username" placeholder="ФИО"></label>
+            <label > Email: <input type="email" name="email" placeholder="name@mail.ru"></label>
+            <label >Телефон: <input type="tel" name="phone" placeholder="+7 999 100 10 10"></label>
+            <label> Возраст ребенка:
+                <select name="age">
+                    <option value>-Выберите возраст-</option>
+                    <option value="7">7-9</option>
+                    <option value="10">10-12</option>
+                    <option value="13">13-17</option>
+                </select>
+            </label>
+            <label>Для кого выбираем:</label>
+                <label><input type="radio" name="gender" value="male">Мальчик </label>
+                <label><input type="radio" name="gender" value="female">Девочка
+            </label>
+            <label> Выберите тематику:</label>
+                <label><input type="checkbox" name="topic" value="detectiv">Детектив</label>
+                <label><input type="checkbox" name="topic" value="advent">Приключения</label>
+                <label><input type="checkbox" name="topic" value="exper">Опыты
+                </label>
+            <label>Ваш вопрос или комментарий:</label>
+            <label><textarea name="message" ></textarea></label>
+            <input class="button" type="submit" value="Отправить заявку">
+            <input class="button" type="reset" value="Очистить форму">
+            </form>
+            
+        </section>
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами для получения дополнительной информации:</p>
+            <ul>
+                <li>Телефон: <a href="tel:+79921234567">+7 992 123 45 67</a></li>
+                <li>Email: <a href="mailto:info@mail.ru">info@mail.ru</a></li>
+                <li>WatsApp: <a href="https://wa.me/79921234567">Пиши нам</a></li>
+                <li>Адрес: г.Пермь, ул. Ленина, д.101</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Квесты дома. Все права защищены <a href="#top">Вернуться в меню</a></p>
+        
+    </footer>
+    
+</body>
+</html>
